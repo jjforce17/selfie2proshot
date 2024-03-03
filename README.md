@@ -21,8 +21,7 @@ get your photo!
 - Automatic background changer. No prompts or questions asked.
 - Automatic image resizer. No editing/resizing of image required. The program 
 will format the photo to match the AI model's image requirements.
-- Optimized positioning. Product image will be positioned accordingly, there is
-no need to position the selfie.
+- Optimized positioning. Posture and position of person will be automatically generated.
 - Photo editing. Image will be touched up and editied just like a professional 
 photo.
 - Simple and straightforward UI. 1 simple page for 1 amazing solution.
@@ -32,7 +31,7 @@ photo.
 - The site takes in an upload from the user.
 - Image is then scaled and resized.
 - Photo is passed through into the (Insert AI model) model, with an optimized
-prompt to generate an image that sets the background.
+prompt to generate an image that sets a new background and posture.
 - Ouptut generation and then output is displayed.
 
 ### Next Steps: 
