@@ -1,14 +1,30 @@
 import streamlit as st
 import image_background_lib as glib
 
+import pandas as pd
+from io import StringIO, BytesIO
+import os
+from PIL import Image
+
+def generate_download_button(generated_image):
+        with generated_image as file: 
+            btn = st.download_button(
+                label = "Download",
+                data = file,
+                file_name = "Selfie2Pro.png",
+                mime="image/png"
+                )
+
+
 st.set_page_config(layout="wide", page_title="Image Background")
 
-st.title("Image Background")
+st.title("Selfie2Pro")
 
 col1, col2, col3 = st.columns(3)
 
 
 with col1:
+    st.subheader("Upload")
     uploaded_file = st.file_uploader("Select an image", type=['png', 'jpg'])
     
     if uploaded_file:
@@ -18,22 +34,21 @@ with col1:
         st.image("images/example.jpg")
 
 with col2:
-    st.subheader("Image parameters")
     
-    mask_prompt = st.text_input("Object to keep:", value="Car", help="The mask text")
+    # mask_prompt = st.text_input("Object to keep:", value="Car", help="The mask text")
     
-    prompt_text = st.text_area("Description including the object to keep and background to add:", value="Car at the beach", height=100, help="The prompt text")
+    # prompt_text = st.text_area("Description including the object to keep and background to add:", value="Car at the beach", height=100, help="The prompt text")
     
-    negative_prompt = st.text_input("What should not be in the background:", help="The negative prompt")
+    # negative_prompt = st.text_input("What should not be in the background:", help="The negative prompt")
 
-    outpainting_mode = st.radio("Outpainting mode:", ["DEFAULT", "PRECISE"], horizontal=True)
+    # outpainting_mode = st.radio("Outpainting mode:", ["DEFAULT", "PRECISE"], horizontal=True)
     
     generate_button = st.button("Generate", type="primary")
 
 
 with col3:
     st.subheader("Result")
-
+    
     if generate_button:
         if uploaded_file:
             image_bytes = uploaded_file.getvalue()
@@ -42,12 +57,12 @@ with col3:
         
         with st.spinner("Drawing..."):
             generated_image = glib.get_image_from_model(
-                prompt_content=prompt_text, 
+                prompt_content=None, 
                 image_bytes=image_bytes,
-                mask_prompt=mask_prompt,
-                negative_prompt=negative_prompt,
-                outpainting_mode=outpainting_mode,
+                mask_prompt=None,
+                negative_prompt=None,
+                outpainting_mode=None,
             )
-        
         st.image(generated_image)
-
+        generate_download_button(generated_image)
+    
