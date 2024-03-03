@@ -1,5 +1,5 @@
 import streamlit as st
-import image_background_lib as glib
+import pipeline as glib
 
 import pandas as pd
 from io import StringIO, BytesIO
