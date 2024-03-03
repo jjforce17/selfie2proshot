@@ -37,11 +37,12 @@ prompt to generate the new image.
 ### Next Steps: 
 With the same mission of minimzing the cost of taking professional photos, our 
 plans for the future of the project includes an automated clothes changer, 
-posture and expression reccomendations, and better editing techniques.
+better posture and expression reccomendations, better editing techniques, and most  improved generation consistency.
 
 ## Resources
 - Amazon Titan
 - Streamlit
+- Amazon Bedrock
 
 ## Architecture Diagram
 ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
