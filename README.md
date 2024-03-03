@@ -1,4 +1,4 @@
-# About Selfie2Proshot 
+# About Selfie2Pro
 ## A professional image generator.
 **Need a professional photo for job applications, ID's or personal document
 but don't have the resources?**
