@@ -45,5 +45,5 @@ better posture and expression reccomendations, better editing techniques, and mo
 - Amazon Bedrock
 
 ## Architecture Diagram
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+!(Selfie2Pro Architecture Diagram.drawio.pngraw=true)
   
