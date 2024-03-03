@@ -39,6 +39,12 @@ With the same mission of minimzing the cost of taking professional photos, our
 plans for the future of the project includes an automated clothes changer, 
 better posture and expression reccomendations, better editing techniques, and most  improved generation consistency.
 
+### How to run
+First, go to the `pipeline` directory and then run the following command:
+```
+streamlit run app.py --server.port 8080 --server.enableXsrfProtection=false
+```
+
 ## Resources
 - Amazon Titan
 - Streamlit
