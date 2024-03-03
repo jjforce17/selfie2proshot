@@ -49,7 +49,4 @@ streamlit run app.py --server.port 8080 --server.enableXsrfProtection=false
 - Amazon Titan
 - Streamlit
 - Amazon Bedrock
-
-## Architecture Diagram
-!(Selfie2Pro Architecture Diagram.drawio.pngraw=true)
   
