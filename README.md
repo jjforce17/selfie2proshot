@@ -43,3 +43,7 @@ posture and expression reccomendations, and better editing techniques.
 ## Resources
 - Amazon Titan
 - Streamlit
+
+## Architecture Diagram
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+  
