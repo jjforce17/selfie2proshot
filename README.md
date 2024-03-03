@@ -31,7 +31,7 @@ photo.
 - The site takes in an upload from the user.
 - Image is then scaled and resized.
 - Photo is passed through into the (Insert AI model) model, with an optimized
-prompt to generate an image that sets a new background and posture.
+prompt to generate the new image.
 - Ouptut generation and then output is displayed.
 
 ### Next Steps: 
