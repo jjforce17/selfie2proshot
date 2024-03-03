@@ -17,6 +17,13 @@ professional photos.
 *All it takes is 3 simple steps!* Go to the site, upload a selfie and 
 get your photo!
 
+### How to run
+First, we need to install all the libraries on cloud9 based on the given instructions and then go to the `selfie2proshot/pipeline` directory and then run the following command:
+```
+cd selfie2proshot/pipeline
+streamlit run app.py --server.port 8080 --server.enableXsrfProtection=false
+```
+
 ### Convenient features
 - Automatic background changer. No prompts or questions asked.
 - Automatic image resizer. No editing/resizing of image required. The program 
@@ -39,11 +46,7 @@ With the same mission of minimzing the cost of taking professional photos, our
 plans for the future of the project includes an automated clothes changer, 
 better posture and expression reccomendations, better editing techniques, and most  improved generation consistency.
 
-### How to run
-First, go to the `pipeline` directory and then run the following command:
-```
-streamlit run app.py --server.port 8080 --server.enableXsrfProtection=false
-```
+
 
 ## Resources
 - Amazon Titan
